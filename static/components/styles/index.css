@@ -27,7 +27,7 @@ header {
     z-index: 999;
     background-color: #ffffff;
     width: 100%;
-    height: 70px;
+    height: 80px;
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.48);
 }
 
@@ -40,7 +40,7 @@ header {
 
 .right {
     margin-left: 20%;
-    gap: 20px;
+    gap: 2px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +49,7 @@ header {
 .cart {
     display: flex;
     justify-content: space-evenly;
-    padding: 0 10px;
+    padding: 5px;
     align-items: center;
     width: 90px;
     height: 45px;
@@ -59,7 +59,7 @@ header {
 }
 
 .cart-back {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     border-left: 1px solid rgb(230, 235, 241);
@@ -69,6 +69,7 @@ header {
 
 .cart i {
     font-size: 22px;
+    display: inline-block;
 }
 
 .cart p {
@@ -79,6 +80,7 @@ header {
 #loginbtn {
     font-size: 22px;
     color: var(--light-blue);
+    display: inline-block;
 }
 
 .search {
@@ -135,16 +137,16 @@ header {
     align-items: center;
     border-right: 1px solid rgb(230, 235, 241);
     user-select: none;
-    font-size: 32px;
+    font-size: 35px;
     color: #d00000;
     font-family: 'Merienda One', cursive;
 }
 
-main {
+.main {
     background-color: #242424;
     position: relative;
     top: 0px;
-    height: 53.5vh;
+    height: 20%;
 }
 
 .main-content {
@@ -226,8 +228,11 @@ main {
     font-weight: 600;
     color: var(--white);
 }
+.um {
+    margin-top: 20px;
+}
 
-#news {
+news {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -236,9 +241,31 @@ main {
     height: 80vw;
 }
 
-#news h2 {
-    padding: 25px 0;
+.direito {
+    color: white;
+    padding: 3px;
     font-size: 36px;
+    background-color: var(--red);
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    border: 4px solid gainsboro;
+    
+
+}
+.esquerdo {
+    color: white;
+    font-size: 36px;
+    padding: 3px;
+    background-color: var(--red);
+    text-align: center;
+    display: inline-block;
+    width: 50%;
+    border: 4px solid gainsboro;
+}
+.pag{
+    text-decoration: none;
+    color: white;
 }
 
 .news-tiles {
@@ -246,8 +273,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 55vw;
-    height: 100vh;
+    width: 30%;
+    height: 250px;
 }
 
 .news-tile {
@@ -256,9 +283,12 @@ main {
 }
 
 .food-tile {
-    display: flex;
     flex-direction: column;
     width: 100%;
+    display: inline-block;
+    margin: 10%;
+    padding: 20px;
+    margin-top: 20px;
 }
 
 .food-tile img {
